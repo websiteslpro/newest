@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+</script>
+
+<head>
+  <title> Knowing our Numbers - Maths - Class 6 - CBSE - lpro.online </title>								<!--Title-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+
+<script>																									<!--Function definition for 'Classes' Tab-->
+	function openCity(evt, cityName) {
+		var i, tabcontent, tablinks;
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+		tablinks = document.getElementsByClassName("tablinks");
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+		document.getElementById(cityName).style.display = "block";
+		evt.currentTarget.className += " active";
+	}
+</script>
+
+<script>
+	function openCity1(evt, cityName) {																		<!--Function definition for 'Board Names' Tab-->
+		var i, tabcontent, tablinks;
+		tabcontent = document.getElementsByClassName("tabcontent1");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+		tablinks = document.getElementsByClassName("tablinks1");
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+		document.getElementById(cityName).style.display = "block";
+		evt.currentTarget.className += " active";
+	}
+</script>
+
+<script type="text/javascript">																				<!--Function definition for automatic Text-->
+  function showtext(element){
+    document.getElementById("textbox").innerHTML = element.getAttribute("name");
+	
+  } 
+</script>
+		
+</head>
+
+<body>
+
+<div w3-include-html="header.html"></div>															<!--Header-->															<!--Header-->
+
+<center> <b id="textbox" style="font-size: 2em;"> Select your Board </b> </center>							<!--Heading & Textbox-->
+																										
+<div class="container-fluid">																				<!--Start of Container-->									
+<div class="row">
+<div class="col-md-12" style="height: 650px; border-right: 1px solid #ccc; overflow: auto; margin: 20px 0 50px 0px;">			
+	
+<div class="tab" style="min-height: 20px;">																	<!--Board Names-->																
+  <center>
+	<a href="#" class="tab" name="Select your Class" onclick="showtext(this);"> <button class="tablinks1" onclick="openCity1(event,'CBSE')" style="margin-right: 5px;"> CBSE </button> </a>
+	<a href="#" class="tab" name="Select your Class" onclick="showtext(this);"> <button class="tablinks1" onclick="openCity1(event,'Rajasthan')" style="margin-right: 5px;"> Rajasthan </button> </a>	
+  </center>
+</div>
+	
+<div id="CBSE" class="tabcontent1">																			<!--Start of CBSE Tab-->
+	
+  <center>																								
+	<div class="tab" style="min-height: 20px;">
+	  <a href="#" class="tab" name="CBSE Class 6" onclick="showtext(this);"> <button class="tablinks" onclick="openCity(event,'CBSE Class 6')" style="margin-right: 5px;"> Class 6 </button> </a>
+	  <a href="#" class="tab" name="CBSE Class 7" onclick="showtext(this);"> <button class="tablinks" onclick="openCity(event,'CBSE Class 7')" style="margin-right: 5px;"> Class 7 </button> </a>
+	  <a href="#" class="tab" name="CBSE Class 8" onclick="showtext(this);"> <button class="tablinks" onclick="openCity(event,'CBSE Class 8')" style="margin-right: 5px;"> Class 8 </button> </a>
+	  <a href="#" class="tab" name="CBSE Class 9" onclick="showtext(this);"> <button class="tablinks" onclick="openCity(event,'CBSE Class 9')" style="margin-right: 5px;"> Class 9 </button> </a>
+	  <a href="#" class="tab" name="CBSE Class 10" onclick="showtext(this);"> <button class="tablinks" onclick="openCity(event,'CBSE Class 10')" style="margin-right: 5px;"> Class 10 </button> </a>
+	  <a href="#" class="tab" name="CBSE Class 11" onclick="showtext(this);"> <button class="tablinks" onclick="openCity(event,'CBSE Class 11')" style="margin-right: 5px;"> Class 11 </button> </a>
+	  <a href="#" class="tab" name="CBSE Class 12" onclick="showtext(this);"> <button class="tablinks" onclick="openCity(event,'CBSE Class 12')"> Class 12 </button> </a>
+	</div>
+  </center>
+	
+	<div id="CBSE Class 6" class="tabcontent">																
+	  
+        <div id="learnyst-course-widget"></div>
+        <script type="text/javascript">
+          var receivedWidget = function(data){
+            document.getElementById("learnyst-course-widget").innerHTML = data["html"];
+          }
+
+          var script1 = document.createElement('script');
+          script1.src = "//api.learnyst.com/learner/v4/getCourseWidget.json?school_id=4789&type=[3]&tag=CBSE Class 6&callback=receivedWidget";
+          document.getElementsByTagName('body')[0].appendChild(script1);
+
+          var script2 = document.createElement('script');
+          script2.src = "//api.learnyst.com/course_widget_script.js";
+          document.getElementsByTagName('body')[0].appendChild(script2);
+        </script>
+      
+	</div>																									
+
+	<div id="CBSE Class 7" class="tabcontent">																
+	  <center> <h1> <b> <font color="#1A65E6"> Coming Soon !! </font> </b> </h1> </center>
+	</div>																									
+
+	<div id="CBSE Class 8" class="tabcontent">																
+	  <center> <h1> <b> <font color="#1A65E6"> Coming Soon !! </font> </b> </h1> </center>
+	</div>																									
+	
+	<div id="CBSE Class 9" class="tabcontent">																
+	  <center> <h1> <b> <font color="#1A65E6"> Coming Soon !! </font> </b> </h1> </center>
+	</div>																									
+	
+	<div id="CBSE Class 10" class="tabcontent">																
+	  <center> <h1> <b> <font color="#1A65E6"> Coming Soon !! </font> </b> </h1> </center>
+	</div>																									
+	
+	<div id="CBSE Class 11" class="tabcontent">																
+	  <center> <h1> <b> <font color="#1A65E6"> Coming Soon !! </font> </b> </h1> </center>
+	</div>																									
+	
+	<div id="CBSE Class 12" class="tabcontent">																
+	  <center> <h1> <b> <font color="#1A65E6"> Coming Soon !! </font> </b> </h1> </center>
+	</div>																									
+	
+</div>																										<!--End of CBSE Tab-->
+	
+	
+<div id="Rajasthan" class="tabcontent1">																	<!--Start of Rajasthan Tab-->
+	
+  <center>																								
+	<div class="tab" style="min-height: 20px;">
+	  <a href="#" class="tab" name="Rajasthan Class 6" onclick="showtext(this);"> <button class="tablinks" onclick="openCity(event,'Rajasthan Class 6')" style="margin-right: 5px;"> Class 6 </button> </a>
+	  <a href="#" class="tab" name="Rajasthan Class 7" onclick="showtext(this);"> <button class="tablinks" onclick="openCity(event,'Rajasthan Class 7')" style="margin-right: 5px;"> Class 7 </button> </a>
+	  <a href="#" class="tab" name="Rajasthan Class 8" onclick="showtext(this);"> <button class="tablinks" onclick="openCity(event,'Rajasthan Class 8')" style="margin-right: 5px;"> Class 8 </button> </a>
+	  <a href="#" class="tab" name="Rajasthan Class 9" onclick="showtext(this);"> <button class="tablinks" onclick="openCity(event,'Rajasthan Class 9')" style="margin-right: 5px;"> Class 9 </button> </a>
+	  <a href="#" class="tab" name="Rajasthan Class 10" onclick="showtext(this);"> <button class="tablinks" onclick="openCity(event,'Rajasthan Class 10')" style="margin-right: 5px;"> Class 10 </button> </a>
+	  <a href="#" class="tab" name="Rajasthan Class 11" onclick="showtext(this);"> <button class="tablinks" onclick="openCity(event,'Rajasthan Class 11')" style="margin-right: 5px;"> Class 11 </button> </a>
+	  <a href="#" class="tab" name="Rajasthan Class 12" onclick="showtext(this);"> <button class="tablinks" onclick="openCity(event,'Rajasthan Class 12')"> Class 12 </button> </a>
+	</div>
+  </center>
+	
+	<div id="Rajasthan Class 6" class="tabcontent">																	
+	  <center> <h1> <b> <font color="#1A65E6"> Coming Soon !! </font> </b> </h1> </center>
+	</div>																									
+
+	<div id="Rajasthan Class 7" class="tabcontent">																	
+	  <center> <h1> <b> <font color="#1A65E6"> Coming Soon !! </font> </b> </h1> </center>
+	</div>																									
+
+	<div id="Rajasthan Class 8" class="tabcontent">															
+	  <center> <h1> <b> <font color="#1A65E6"> Coming Soon !! </font> </b> </h1> </center>
+	</div>																									
+	
+	<div id="Rajasthan Class 9" class="tabcontent">															
+	  <center> <h1> <b> <font color="#1A65E6"> Coming Soon !! </font> </b> </h1> </center>
+	</div>																									
+	
+	<div id="Rajasthan Class 10" class="tabcontent">														
+	  <center> <h1> <b> <font color="#1A65E6"> Coming Soon !! </font> </b> </h1> </center>
+	</div>																									
+	
+	<div id="Rajasthan Class 11" class="tabcontent">														
+	  <center> <h1> <b> <font color="#1A65E6"> Coming Soon !! </font> </b> </h1> </center>
+	</div>																									
+	
+	<div id="Rajasthan Class 12" class="tabcontent">														
+	  <center> <h1> <b> <font color="#1A65E6"> Coming Soon !! </font> </b> </h1> </center>
+	</div>																									
+	
+</div>																									<!--End of Rajasthan Tab-->	
+	
+</div>																										  
+</div>
+</div>																									<!--End of Container-->
+    
+<object width="100%" data="footer.html"> </object>														<!--Footer-->
+
+<script>
+includeHTML();
+</script>
+
+</body>
+
+</html>
+
+
+
+

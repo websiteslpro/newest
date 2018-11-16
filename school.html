@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Knowing our Numbers - Maths - Class 6 - CBSE - lpro.online </title>								<!--Title-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+<script>																									<!--Function definition for 'Classes' Tab-->
+	function openCity(evt, cityName) {
+		var i, tabcontent, tablinks;
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+		tablinks = document.getElementsByClassName("tablinks");
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+		document.getElementById(cityName).style.display = "block";
+		evt.currentTarget.className += " active";
+	}
+</script>
+
+<script>
+	function openCity1(evt, cityName) {																		<!--Function definition for 'Board Names' Tab-->
+		var i, tabcontent, tablinks;
+		tabcontent = document.getElementsByClassName("tabcontent1");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+		tablinks = document.getElementsByClassName("tablinks1");
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+		document.getElementById(cityName).style.display = "block";
+		evt.currentTarget.className += " active";
+	}
+</script>
+
+<script type="text/javascript">																				<!--Function definition for automatic Text-->
+  function showtext(element){
+    document.getElementById("textbox").innerHTML = element.getAttribute("name");
+	
+  } 
+</script>
+		
+<style>
+
+.headerbottom {
+  overflow: hidden;
+  background-color: #FF851B;
+  padding: 1px;
+}
+
+.headerbottom a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 5px 10px 5px 5px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 45px;
+  border-radius: 4px;
+}
+
+.headerbottom a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.headerbottom a:hover {
+  background-color: white;
+  color: black;
+}
+
+.headerbottom a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.headerbottom-right {
+  float: right;
+}
+
+@media screen and (max-width: 100px) {
+  .headerbottom a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .headerbottom-right {
+    float: none;
+  }
+}
+</style>
+
+<style>
+
+/* Popup Box */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 8888; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10vh auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 400px; /* Could be more or less, depending on screen size */
+}
+@media (min-width: 1366px) {
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10vh auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+    }
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+</style>		
+		
+		
+
+</head>
+
+<body>
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12" style="background-color: #FF851B; color: black;">
+  
+  <center>
+	<span style="margin-left: 20px;"> <i class="fa fa-phone"> </i> +91 911 911 1171 </span>
+	<span style="margin-left: 20px;"> <i class="fa fa-envelope-o"> </i> support@lpro.online </span>		 
+  </center>
+  
+</div>
+</div>
+</div>
+
+<div class="headerbottom"> 
+	
+	<a href="#" class="logo"> <img src="finallogo.png" width="150" height="40"> </img> </a>
+	
+	<div class="headerbottom-right">
+		<a href="#" class="button" data-modal="#modalOne"> Signup </a>
+		<a href="#" class="button" data-modal="#modalTwo"> Login </a>
+		<a class="active"> The School Pro </a>		
+	</div>
+	
+</div>
+
+<div id="modalOne" class="modal">
+  <div class="modal-content">
+    <div class="contact-form">
+      <a class="close"> &times; </a>
+        <center>		
+			
+			<div style="padding: 2px 2px 5px 2px; border-bottom: 1px solid #ccc;"> <font size="4"> &nbsp;&nbsp; Sign Up and Start Learning </font> </div>
+				
+			<div class="learnyst-signup-widget"> </div>
+			<script type="text/javascript">
+			var receivedSignupWidget = function(data) {
+			document.getElementsByClassName("learnyst-signup-widget")[0].innerHTML = data["html"];
+			};
+				  
+			var signup_widget_script_html = document.createElement('script');
+			signup_widget_script_html.src = "//api.learnyst.com/learner/v4/getSignupWidget.json?callback=receivedSignupWidget&school_id=4789";
+			document.getElementsByTagName('body')[0].appendChild(signup_widget_script_html);
+				  
+			var signup_widget_script_js = document.createElement('script');
+			signup_widget_script_js.src = "//api.learnyst.com/learner/v4/getSignupWidgetScript?school_id=4789&is_from_other_domain=true";
+			document.getElementsByTagName('body')[0].appendChild(signup_widget_script_js);
+			</script>
+			
+		</center>
+    </div>
+  </div>
+</div>
+
+<div id="modalTwo" class="modal">
+  <div class="modal-content">
+    <div class="contact-form">
+      <span class="close"> &times; </span>
+		<center>		
+			
+			<div style="padding: 2px 2px 5px 2px; border-bottom: 1px solid #ccc;"> <font size="4"> &nbsp;&nbsp; Login and Continue Learning </font> </div>
+				
+			<div class="learnyst-login-widget"> </div>
+			<script type="text/javascript">
+			var receivedLoginWidget = function(data) {
+			document.getElementsByClassName("learnyst-login-widget")[0].innerHTML = data["html"];
+			};
+				  
+			var login_widget_script_html = document.createElement('script');
+			login_widget_script_html.src = "//api.learnyst.com/learner/v4/getLoginWidget.json?widget_type=form&callback=receivedLoginWidget&school_id=4789";
+			document.getElementsByTagName('body')[0].appendChild(login_widget_script_html);
+				  
+			var login_widget_script_js = document.createElement('script');
+			login_widget_script_js.src = "//api.learnyst.com/learner/v4/getLoginWidgetScript.js?school_id=4789&is_from_other_domain=true";
+			document.getElementsByTagName('body')[0].appendChild(login_widget_script_js);  
+			</script>
+			
+		</center>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<center> <b id="textbox" style="font-size: 2em;"> Select your Board </b> </center>							<!--Heading & Textbox-->
+																										
+<div class="container-fluid">																				<!--Start of Container-->									
+<div class="row">
+<div class="col-md-12" style="height: 650px; border-right: 1px solid #ccc; overflow: auto; margin: 20px 0 50px 0px;">			
+	
+<div class="tab" style="min-height: 20px;">																	<!--Board Names-->																
+  <center>
+	<a href="#" class="tab" name="Select your Class" onclick="showtext(this);"> <button class="tablinks1" onclick="openCity1(event,'CBSE')" style="margin-right: 5px;"> CBSE </button> </a>
+	<a href="#" class="tab" name="Select your Class" onclick="showtext(this);"> <button class="tablinks1" onclick="openCity1(event,'Rajasthan')" style="margin-right: 5px;"> Rajasthan </button> </a>	
+  </center>
+</div>
+	
+<div id="CBSE" class="tabcontent1">																			<!--Start of CBSE Tab-->
+	
+  <center>																								
+	<div class="tab" style="min-height: 20px;">
+	  <a href="#" class="tab" name="CBSE Class 6" onclick="showtext(this);"> <button class="tablinks" onclick="openCity(event,'CBSE Class 6')" style="margin-right: 5px;"> Class 6 </button> </a>
+	  <a href="#" class="tab" name="CBSE Class 7" onclick="showtext(this);"> <button class="tablinks" onclick="openCity(event,'CBSE Class 7')" style="margin-right: 5px;"> Class 7 </button> </a>
+	  <a href="#" class="tab" name="CBSE Class 8" onclick="showtext(this);"> <button class="tablinks" onclick="openCity(event,'CBSE Class 8')" style="margin-right: 5px;"> Class 8 </button> </a>
+	  <a href="#" class="tab" name="CBSE Class 9" onclick="showtext(this);"> <button class="tablinks" onclick="openCity(event,'CBSE Class 9')" style="margin-right: 5px;"> Class 9 </button> </a>
+	  <a href="#" class="tab" name="CBSE Class 10" onclick="showtext(this);"> <button class="tablinks" onclick="openCity(event,'CBSE Class 10')" style="margin-right: 5px;"> Class 10 </button> </a>
+	  <a href="#" class="tab" name="CBSE Class 11" onclick="showtext(this);"> <button class="tablinks" onclick="openCity(event,'CBSE Class 11')" style="margin-right: 5px;"> Class 11 </button> </a>
+	  <a href="#" class="tab" name="CBSE Class 12" onclick="showtext(this);"> <button class="tablinks" onclick="openCity(event,'CBSE Class 12')"> Class 12 </button> </a>
+	</div>
+  </center>
+	
+	<div id="CBSE Class 6" class="tabcontent">																	  
+        
+		<center> <div id="learnyst-course-widget"> </div> </center>
+		<script type="text/javascript">
+          var receivedWidget = function(data){
+            document.getElementById("learnyst-course-widget").innerHTML = data["html"];
+          }
+
+          var script1 = document.createElement('script');
+          script1.src = "//api.learnyst.com/learner/v4/getCourseWidget.json?school_id=4789&type=[3]&tag=CBSE Class 6&callback=receivedWidget";
+          document.getElementsByTagName('body')[0].appendChild(script1);
+
+          var script2 = document.createElement('script');
+          script2.src = "//api.learnyst.com/course_widget_script.js";
+          document.getElementsByTagName('body')[0].appendChild(script2);
+        </script>
+		
+	</div>																									
+
+	<div id="CBSE Class 7" class="tabcontent">																
+	  <center> <h1> <b> <font color="#1A65E6"> Coming Soon !! </font> </b> </h1> </center>
+	</div>																									
+
+	<div id="CBSE Class 8" class="tabcontent">																
+	  <center> <h1> <b> <font color="#1A65E6"> Coming Soon !! </font> </b> </h1> </center>
+	</div>																									
+	
+	<div id="CBSE Class 9" class="tabcontent">																
+	  <center> <h1> <b> <font color="#1A65E6"> Coming Soon !! </font> </b> </h1> </center>
+	</div>																									
+	
+	<div id="CBSE Class 10" class="tabcontent">																
+	  <center> <h1> <b> <font color="#1A65E6"> Coming Soon !! </font> </b> </h1> </center>
+	</div>																									
+	
+	<div id="CBSE Class 11" class="tabcontent">																
+	  <center> <h1> <b> <font color="#1A65E6"> Coming Soon !! </font> </b> </h1> </center>
+	</div>																									
+	
+	<div id="CBSE Class 12" class="tabcontent">																
+	  <center> <h1> <b> <font color="#1A65E6"> Coming Soon !! </font> </b> </h1> </center>
+	</div>																									
+	
+</div>																										<!--End of CBSE Tab-->
+	
+	
+<div id="Rajasthan" class="tabcontent1">																	<!--Start of Rajasthan Tab-->
+	
+  <center>																								
+	<div class="tab" style="min-height: 20px;">
+	  <a href="#" class="tab" name="Rajasthan Class 6" onclick="showtext(this);"> <button class="tablinks" onclick="openCity(event,'Rajasthan Class 6')" style="margin-right: 5px;"> Class 6 </button> </a>
+	  <a href="#" class="tab" name="Rajasthan Class 7" onclick="showtext(this);"> <button class="tablinks" onclick="openCity(event,'Rajasthan Class 7')" style="margin-right: 5px;"> Class 7 </button> </a>
+	  <a href="#" class="tab" name="Rajasthan Class 8" onclick="showtext(this);"> <button class="tablinks" onclick="openCity(event,'Rajasthan Class 8')" style="margin-right: 5px;"> Class 8 </button> </a>
+	  <a href="#" class="tab" name="Rajasthan Class 9" onclick="showtext(this);"> <button class="tablinks" onclick="openCity(event,'Rajasthan Class 9')" style="margin-right: 5px;"> Class 9 </button> </a>
+	  <a href="#" class="tab" name="Rajasthan Class 10" onclick="showtext(this);"> <button class="tablinks" onclick="openCity(event,'Rajasthan Class 10')" style="margin-right: 5px;"> Class 10 </button> </a>
+	  <a href="#" class="tab" name="Rajasthan Class 11" onclick="showtext(this);"> <button class="tablinks" onclick="openCity(event,'Rajasthan Class 11')" style="margin-right: 5px;"> Class 11 </button> </a>
+	  <a href="#" class="tab" name="Rajasthan Class 12" onclick="showtext(this);"> <button class="tablinks" onclick="openCity(event,'Rajasthan Class 12')"> Class 12 </button> </a>
+	</div>
+  </center>
+	
+	<div id="Rajasthan Class 6" class="tabcontent">																	
+	  <center> <h1> <b> <font color="#1A65E6"> Coming Soon !! </font> </b> </h1> </center>
+	</div>																									
+
+	<div id="Rajasthan Class 7" class="tabcontent">																	
+	  <center> <h1> <b> <font color="#1A65E6"> Coming Soon !! </font> </b> </h1> </center>
+	</div>																									
+
+	<div id="Rajasthan Class 8" class="tabcontent">															
+	  <center> <h1> <b> <font color="#1A65E6"> Coming Soon !! </font> </b> </h1> </center>
+	</div>																									
+	
+	<div id="Rajasthan Class 9" class="tabcontent">															
+	  <center> <h1> <b> <font color="#1A65E6"> Coming Soon !! </font> </b> </h1> </center>
+	</div>																									
+	
+	<div id="Rajasthan Class 10" class="tabcontent">														
+	  <center> <h1> <b> <font color="#1A65E6"> Coming Soon !! </font> </b> </h1> </center>
+	</div>																									
+	
+	<div id="Rajasthan Class 11" class="tabcontent">														
+	  <center> <h1> <b> <font color="#1A65E6"> Coming Soon !! </font> </b> </h1> </center>
+	</div>																									
+	
+	<div id="Rajasthan Class 12" class="tabcontent">														
+	  <center> <h1> <b> <font color="#1A65E6"> Coming Soon !! </font> </b> </h1> </center>
+	</div>																									
+	
+</div>																									<!--End of Rajasthan Tab-->	
+	
+</div>																										  
+</div>
+</div>																									<!--End of Container-->
+    
+<object width="100%" data="footer.html"></object>														<!--Footer-->
+
+<script>
+
+$(".button").on("click", function() {
+  var modal = $(this).data("modal");
+  $(modal).show();
+});
+
+$(".modal").on("click", function(e) {
+  var className = e.target.className;
+  if(className === "modal" || className === "close"){
+    $(this).closest(".modal").hide();
+  }
+});
+
+</script>
+
+</body>
+
+</html>
+
+
+
+

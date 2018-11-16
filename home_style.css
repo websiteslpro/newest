@@ -1,0 +1,15 @@
+
+/* Hyperlink Properties */
+
+a:link {
+	color: black;
+}
+
+a:visited {
+	color: black;
+}
+
+a:hover {
+	color: blue;
+	text-decoration: underline;
+}
